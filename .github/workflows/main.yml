@@ -24,7 +24,19 @@ jobs:
         uses: actions/checkout@v4
 
       # Apne custom commands execute karenge.
-      - name: My First Step
+      - name: Initialize repo
+        run: |
+          echo "Hello world!"
+          uname -a  #give hardware information
+          
+      - name: Check the docker Installation
+        run: |
+          docker
+          docker images
+          
+       - name: My third Step
         run: |
           echo "This is DevOps Molvi"
-          uname -a  #give hardware information
+          uname -a  #give hardware information                 
+
+                    
