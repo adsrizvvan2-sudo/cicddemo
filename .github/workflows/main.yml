@@ -27,4 +27,4 @@ jobs:
       - name: My First Step
         run: |
           echo "This is DevOps Molvi"
-          uname -a
+          uname -a  #give hardware information
