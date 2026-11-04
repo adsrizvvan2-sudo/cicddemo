@@ -1,0 +1,20 @@
+name: My first CI/CD piepline #name of pipelien
+
+on:  #jab b koi push ai ya pull request aai to on kardo piepeline kardi
+  push:
+      branches: main
+
+jobs: #code mera build ho is runner par
+  build:
+    runs-on: ubuntu-latest #yeh github built ni runners(OS) hen
+  steps:
+
+    - uses: action/checkout@v4  #code ma koi tabdeeli to nai hui?
+    - name: My first steps:
+      run:  | #piepe symbol yaani multiple commands chala saktay 
+        echo "This is DEvops molvi"
+        uname -a
+        
+  
+      
+
