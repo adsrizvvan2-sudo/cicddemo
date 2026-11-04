@@ -34,9 +34,8 @@ jobs:
           docker
           docker images
           
-       - name: My third Step
+       - name: Run docker
         run: |
-          echo "This is DevOps Molvi"
-          uname -a  #give hardware information                 
+            run docker hello-world                 
 
                     
